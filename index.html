@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+
+    <link rel="stylesheet" href="app.min.css">
+
+
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.5.55/css/materialdesignicons.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/plyr/dist/plyr.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/lightgallery.js/dist/css/lightgallery.min.css"/>
+</head>
+
+
+<body>
+<div class="wrapper">
+    <div id="header">
+        <ul>
+            <li id="link_about" class="tab">About</li>
+            <li id="link_projects" class="tab">Projects</li>
+            <!--            <li id="link_experience" class="tab">Experience</li>-->
+            <li id="link_contact" class="tab">Contact me</li>
+        </ul>
+    </div>
+
+    <div id="about" class="section">
+        <p>Hi! I am Mark. I am into programming, UI/UX design, and all kinds of tech stuff.
+            <br>
+            I love non-profits and open-source software.
+            <!--            <br><br>-->
+            <!--            <i style="color: #424242">// Rumor has it, I might extend this page a bit later :></i>-->
+        </p>
+    </div>
+
+
+    <div id="projects" class="section">
+        <p>Projects started by me <i style="color: #424242">(the ones I'm proud of :>)</i>:</p>
+        <ul>
+            <li>Sharik
+                <a class="link_icon" href="https://github.com/marchellodev/sharik" target="_blank"><i
+                        class="mdi mdi-github"></i></a>
+                <a
+                        class="link_icon"
+                        href="https://play.google.com/store/apps/details?id=dev.marchello.sharik" target="_blank"><i
+                        class="mdi mdi-google-play"></i></a> <span id="open-sharik" class="play_demo"><i
+                        class="mdi mdi-play"></i>play demo</span>
+            </li>
+            <span>Platforms: <i
+                    class="mdi mdi-android"></i>, <i
+                    class="mdi mdi-microsoft-windows"></i>, <i
+                    class="mdi mdi-linux"></i>, <i
+                    class="mdi mdi-desktop-mac"></i></span>
+            <span>Tech: <a class="link" href="https://flutter.dev" target="_blank">Flutter</a>, <a class="link"
+                                                                                                   href="https://golang.org"
+                                                                                                   target="_blank">Go</a></span>
+            <span><br></span>
+            <span>An open-source application for sharing files within a local network</span>
+        </ul>
+
+        <br>
+        <p>Projects I am participating in:</p>
+        <ul>
+            <li>Mavka
+                <a class="link_icon" href="https://github.com/mavka-org" target="_blank"><i
+                        class="mdi mdi-github"></i></a>
+                <a
+                        class="link_icon"
+                        href="http://mavka.org" target="_blank"><i
+                        class="mdi mdi-web"></i></a>
+
+                <span id="open-mavka" class="play_demo"><i class="mdi mdi-play"></i>play demo</span>
+
+            </li>
+
+            <span>Location: <i>Ukraine</i></span>
+            <span>Position: <i>Mobile development</i> (<a class="link" href="https://flutter.dev" target="_blank">Flutter</a>)</span>
+
+            <span><br></span>
+            <span>Online learning platform for ukrainian students</span>
+
+            <br><br>
+
+            <li>Dumka?
+                <a class="link_icon" href="https://github.com/smuzi-ua" target="_blank"><i
+                        class="mdi mdi-github"></i></a></li>
+
+            <span>Location: <i>Ukraine</i></span>
+            <span>Position: <i>Back-end development</i> (<a class="link" href="https://golang.org"
+                                                            target="_blank">Go</a>), <i>UI/UX design</i> (<a
+                    class="link" href="https://figma.com" target="_blank">Figma</a>)<br><br></span>
+
+
+            <span>A mobile application for establishing open communication channel between school and students</span>
+
+
+            <br><br>
+
+            <li>Witals24
+                <a class="link_icon" href="https://witals24.com" target="_blank"><i
+                        class="mdi mdi-web"></i>
+                </a> <span id="open-witals24" class="play_demo"><i class="mdi mdi-play"></i>play demo</span>
+            </li>
+
+            <span>Location: <i>India</i></span>
+            <span>Position: <i>Front-end development</i> (<a
+                    class="link" href="https://flutter.dev" target="_blank">Flutter</a>), <i>UI/UX design</i> (<a
+                    class="link" href="https://figma.com"
+                    target="_blank">Figma</a>)<br></span>
+
+            <span><br></span>
+
+            <span>Internship at an company that manufactures devices for health monitoring</span>
+        </ul>
+    </div>
+
+
+    <div id="contact" class="section">
+        <p>You can reach out to me via <a class="link" href="https://t.me/mmar4ik" target="_blank"> Telegram</a>
+            (@mmar4ik) or <a class="link" href="mailto:marchellodev@gmail.com" target="_blank"> Email</a>
+            (marchellodev@gmail.com)</p>
+    </div>
+
+
+    <div style="" id="background">
+        <div class="wrapper" style="background: #FAFAFA; height: 100%">
+
+        </div>
+    </div>
+
+</div>
+
+<div class="modal micromodal-slide" id="modal-mavka" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+                <h2 class="modal__title">
+
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content">
+                <video id="mavka-player" playsinline controls>
+                    <source src="assets/mavka_demo.mp4" type="video/mp4"/>
+                </video>
+            </main>
+        </div>
+    </div>
+</div>
+
+<div class="modal micromodal-slide" id="modal-sharik" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+                <h2 class="modal__title">
+
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content">
+                <video id="sharik-player" playsinline controls>
+                    <source src="assets/sharik_demo.mp4" type="video/mp4"/>
+                </video>
+            </main>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal micromodal-slide" id="modal-witals24" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+                <h2 class="modal__title">
+
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+                <video id="witals24-player" playsinline controls>
+                    <source src="assets/witals24_demo.mp4" type="video/mp4"/>
+                </video>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/chibijs"></script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script src="https://unpkg.com/plyr/dist/plyr.polyfilled.min.js"></script>
+
+<script src="app.min.js"></script>
+</body>
+</html>
