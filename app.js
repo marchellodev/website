@@ -1,8 +1,7 @@
 const pages = [
     "about",
-    "projects",
-    // "experience",
-    "contact"
+    "experience",
+    "blog",
 ];
 
 let active = pages[0];

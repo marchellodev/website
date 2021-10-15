@@ -5,14 +5,14 @@
     <title>Home page</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="google-site-verification" content="-tVT8fdQmkJ95doAoyU3CG0-AY9SyOJsPSRLJALrbn0" />
-    
+    <meta name="google-site-verification" content="-tVT8fdQmkJ95doAoyU3CG0-AY9SyOJsPSRLJALrbn0"/>
+
     <link rel="stylesheet" href="app.min.css">
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.5.55/css/materialdesignicons.min.css"/>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.2.95/css/materialdesignicons.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/plyr/dist/plyr.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/lightgallery.js/dist/css/lightgallery.min.css"/>
 </head>
 
 
@@ -21,109 +21,177 @@
     <div id="header">
         <ul>
             <li id="link_about" class="tab">About</li>
-            <li id="link_projects" class="tab">Projects</li>
-            <!--            <li id="link_experience" class="tab">Experience</li>-->
-            <li id="link_contact" class="tab">Contact me</li>
+            <li id="link_experience" class="tab">Experience</li>
+            <li id="link_blog" class="tab">Blog</li>
         </ul>
     </div>
 
     <div id="about" class="section">
-        <p>Hi! I am Mark. I am into programming, UI/UX design, and all kinds of tech stuff.
-            <br>
-            I love non-profits and open-source software.
-            <!--            <br><br>-->
-            <!--            <i style="color: #424242">// Rumor has it, I might extend this page a bit later :></i>-->
+
+        <p>
+            Hey! My name is Mark. I am into design, low-level coding, distributed apps, and free software :>
         </p>
+        <p>
+            Age: 18<br>
+            Location: Kyiv, Ukraine<br>
+            Languages: English, Ukrainian, Russian<br>
+            Education: <a class="link" href="https://kse.ua" target="_blank">KSE</a> '25,
+            <a class="link" href="https://www.ugs.foundation" target="_blank">UGS</a> '20,
+            <a class="link" href="#">Lyceum №1 of Kamin-Kashyrskyi</a>
+            '21
+        </p>
+
+        <ul>
+            <li>Email&nbsp;&nbsp;&nbsp;&nbsp; <a class="link" target="_blank" href="mailto:marchellodev@gmail.com">marchellodev@gmail.com</a>
+            </li>
+            <li>Telegram&nbsp; <a class="link" target="_black" href="https://t.me/mmar4ik">@mmar4ik</a></li>
+            <li>Twitter&nbsp;&nbsp; <a class="link" target="_blank" href="https://twitter.com/mmar4ik">@mmar4ik</a></li>
+            <li>LinkedIn&nbsp; <a class="link" target="_blank" href="https://www.linkedin.com/in/mark-motliuk">mark-motliuk</a></li>
+        </ul>
+
     </div>
 
 
-    <div id="projects" class="section">
-        <p>Projects started by me <i style="color: #424242">(the ones I'm proud of :>)</i>:</p>
+    <div id="experience" class="section">
+<!--        <p style="color: #424242">-->
+<!--            For a full list of work experience, please refer to my <a class="link" href="https://flutter.dev"-->
+<!--                                                                      target="_blank"-->
+<!--                                                                      style="color: #424242">LinkedIn</a>.-->
+<!--        </p>-->
+
         <ul>
             <li>Sharik
                 <a class="link_icon" href="https://github.com/marchellodev/sharik" target="_blank"><i
                         class="mdi mdi-github"></i></a>
                 <a
                         class="link_icon"
-                        href="https://play.google.com/store/apps/details?id=dev.marchello.sharik" target="_blank"><i
-                        class="mdi mdi-google-play"></i></a> <span id="open-sharik" class="play_demo"><i
+                        href="https://play.google.com/store/apps/details?id=dev.monora.sharik" target="_blank"><i
+                        class="mdi mdi-google-play"></i></a>
+                <a
+                        class="link_icon"
+                        href="https://apps.apple.com/app/id1531473857" target="_blank"><i
+                        class="mdi mdi-apple"></i></a>
+
+                <a
+                        class="link_icon"
+                        href="https://snapcraft.io/sharik-app" target="_blank"><i
+                        class="mdi mdi-ubuntu"></i></a>
+
+                <a
+                        class="link_icon"
+                        href="https://www.microsoft.com/store/apps/9NGCLB7JSPR9?cid=storebadge&ocid=badge"
+                        target="_blank"><i
+                        class="mdi mdi-microsoft"></i></a>
+
+
+                <span id="open-sharik" class="play_demo"><i
                         class="mdi mdi-play"></i>play demo</span>
             </li>
-            <span>Platforms: <i
-                    class="mdi mdi-android"></i>, <i
-                    class="mdi mdi-microsoft-windows"></i>, <i
-                    class="mdi mdi-linux"></i>, <i
-                    class="mdi mdi-desktop-mac"></i></span>
-            <span>Tech: <a class="link" href="https://flutter.dev" target="_blank">Flutter</a>, <a class="link"
-                                                                                                   href="https://golang.org"
-                                                                                                   target="_blank">Go</a></span>
+            <span>Time: <i>Feb 2020 - present</i></span>
+            <span>Type: <i>Hobby project</i></span>
+            <span>Role: <i>Maintainer</i></span>
+            <span>Tech: <i><a class="link" href="https://flutter.dev" target="_blank">Flutter</a>,
+                <a class="link" href=https://www.rust-lang.org"" target="_blank">Rust</a>,
+                <a class="link" href="https://golang.org" target="_blank">Go</a>
+                </i>
+            </span>
             <span><br></span>
-            <span>An open-source application for sharing files within a local network</span>
-        </ul>
+            <span>Built a cross-platform open-source application for sharing files within a local network.</span>
+            <span class="highlighted">20 languages; 400+ daily users; 350+ stars of github</span>
 
-        <br>
-        <p>Projects I am participating in:</p>
-        <ul>
-            <li>Mavka
-                <a class="link_icon" href="https://github.com/mavka-org" target="_blank"><i
+            <br>
+            <br>
+            <li>Grey Box
+
+                <a class="link_icon" href="https://github.com/grey-box" target="_blank"><i
                         class="mdi mdi-github"></i></a>
                 <a
                         class="link_icon"
-                        href="http://mavka.org" target="_blank"><i
+                        href="https://www.grey-box.ca" target="_blank"><i
                         class="mdi mdi-web"></i></a>
 
-                <span id="open-mavka" class="play_demo"><i class="mdi mdi-play"></i>play demo</span>
-
             </li>
+            <span>Time: <i>Jul 2021 - Sep 2021</i></span>
+            <span>Type: <i>Volunteering</i></span>
+            <span>Role: <i>Research and development</i></span>
+            <span>Tech: <i><a class="link" href="https://www.python.org" target="_blank">Python</a></i>, <i><a
+                    class="link" href="https://www.rust-lang.org" target="_blank">Rust</a></i>
 
-            <span>Location: <i>Ukraine</i></span>
-            <span>Position: <i>Mobile development</i> (<a class="link" href="https://flutter.dev" target="_blank">Flutter</a>)</span>
+            </span>
 
             <span><br></span>
-            <span>Online learning platform for ukrainian students</span>
 
-            <br><br>
-
-            <li>Dumka?
-                <a class="link_icon" href="https://github.com/smuzi-ua" target="_blank"><i
-                        class="mdi mdi-github"></i></a></li>
-
-            <span>Location: <i>Ukraine</i></span>
-            <span>Position: <i>Back-end development</i> (<a class="link" href="https://golang.org"
-                                                            target="_blank">Go</a>), <i>UI/UX design</i> (<a
-                    class="link" href="https://figma.com" target="_blank">Figma</a>)<br><br></span>
-
-
-            <span>A mobile application that allows students to suggest improvements and share complaints with the whole school community.</span>
+            <span>
+                Improved and documented a Web Scraping workflow.
+            </span>
 
 
             <br><br>
+
 
             <li>Witals24
                 <a class="link_icon" href="https://witals24.com" target="_blank"><i
                         class="mdi mdi-web"></i>
                 </a> <span id="open-witals24" class="play_demo"><i class="mdi mdi-play"></i>play demo</span>
             </li>
+            <span>Time: <i>Jul 2020 - Sep 2020</i></span>
+            <span>Type: <i>Volunteering</i></span>
+            <span>Role: <i>UI/UX designer & web developer</i></span>
+            <span>Tech: <i><a class="link" href="https://www.figma.com" target="_blank">Figma</a></i>, <i><a
+                    class="link" href="https://flutter.dev" target="_blank">Flutter</a></i>
 
-            <span>Location: <i>India</i></span>
-            <span>Position: <i>Front-end development</i> (<a
-                    class="link" href="https://flutter.dev" target="_blank">Flutter</a>), <i>UI/UX design</i> (<a
-                    class="link" href="https://figma.com"
-                    target="_blank">Figma</a>)<br></span>
+            </span>
 
             <span><br></span>
 
-            <span>Internship at an company that manufactures devices for health monitoring</span>
+            <span>Designed and built a web app for an Indian company that manufactures devices for health monitoring.</span>
+            <br><br>
+            <li>Mavka
+                <a class="link_icon" href="https://github.com/mavka-org" target="_blank"><i
+                        class="mdi mdi-github"></i></a>
+                <a
+                        class="link_icon"
+                        href="https://mavka.org" target="_blank"><i
+                        class="mdi mdi-web"></i></a>
+
+                <span id="open-mavka" class="play_demo"><i class="mdi mdi-play"></i>play demo</span>
+
+            </li>
+
+            <span>Time: <i>May 2020 - Jul 2020</i></span>
+            <span>Type: <i>Volunteering</i></span>
+            <span>Role: <i>Mobile developer</i></span>
+            <span>Tech: <i><a class="link" href="https://flutter.dev" target="_blank">Flutter</a>, <a class="link"
+                                                                                                      href="https://firebase.google.com"
+                                                                                                      target="_blank">Firebase</a></i></span>
+
+            <span><br></span>
+            <span>Started building a mobile app for Mavka - an online learning platform for ukrainian youth.</span>
+
+            <!--            <br><br>-->
+
+            <!--            <li>Dumka?-->
+            <!--                <a class="link_icon" href="https://github.com/smuzi-ua" target="_blank"><i-->
+            <!--                        class="mdi mdi-github"></i></a></li>-->
+            <!--            <span>Time: <i>? 2020 - present</i></span>-->
+            <!--            <span>Type: <i>Volunteering</i></span>-->
+            <!--            <span>Role: <i>UI/UX designer & mobile developer</i></span>-->
+            <!--            <span>Tech: <i><a class="link" href="https://www.figma.com" target="_blank">Figma</a></i>, <i><a-->
+            <!--                    class="link" href="https://flutter.dev" target="_blank">Flutter</a></i></span>-->
+
+            <!--            <span><br></span>-->
+            <!--            <span>Built a mobile application that allows students to suggest improvements and share complaints with the whole school community.</span>-->
+
+
         </ul>
     </div>
 
+    <div id="blog" class="section">
+        <p style="color: #424242">
+            // I hope to start writing about distributed tech soon. Please stay tuned :>
+        </p>
 
-    <div id="contact" class="section">
-        <p>You can reach out to me via <a class="link" href="https://t.me/mmar4ik" target="_blank"> Telegram</a>
-            (@mmar4ik) or <a class="link" href="mailto:marchellodev@gmail.com" target="_blank"> Email</a>
-            (marchellodev@gmail.com)</p>
     </div>
-
 
     <div style="" id="background">
         <div class="wrapper" style="background: #FAFAFA; height: 100%">
@@ -192,6 +260,6 @@
 <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 <script src="https://unpkg.com/plyr/dist/plyr.polyfilled.min.js"></script>
 
-<script src="app.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

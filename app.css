@@ -54,6 +54,11 @@
     user-select: none;
 }
 
+.highlighted {
+    color: black;
+    display: table;
+    background-color: #ede7f6;
+}
 
 #header {
     padding: 0.4em;
