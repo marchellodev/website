@@ -1,7 +1,7 @@
 const pages = [
     "about",
     "experience",
-    "blog",
+    // "cv",
 ];
 
 let active = pages[0];
@@ -62,4 +62,8 @@ $('#open-sharik').on('click', function () {
 $('#open-witals24').on('click', function () {
     const player = new Plyr('#witals24-player');
     MicroModal.show('modal-witals24');
+})
+
+$('#link_cv').on('click', function () {
+    window.open('/cv.pdf', '_blank');
 })
