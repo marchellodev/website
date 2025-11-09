@@ -1,6 +1,6 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-@import "tw-animate-css";
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -118,4 +118,43 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/otf/JetBrainsMono-Regular.otf')
+      format('opentype'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2')
+      format('woff2'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf')
+      format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/otf/JetBrainsMono-Bold.otf')
+      format('opentype'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Bold.woff2')
+      format('woff2'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Bold.ttf')
+      format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/otf/JetBrainsMono-Italic.otf')
+      format('opentype'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Italic.woff2')
+      format('woff2'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Italic.ttf')
+      format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
