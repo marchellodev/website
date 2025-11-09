@@ -4,6 +4,7 @@
   import { Button } from '$lib/shadcn/components/ui/button';
   import { cn } from '$lib/shadcn/utils';
   import { page } from '$app/state';
+  import { Toaster } from '$lib/shadcn/components/ui/sonner';
 
   let { children } = $props();
 </script>
@@ -19,16 +20,18 @@
     variant="link"
     size="lg"
     href={opts.url}
-    class={cn('px-4 text-lg', isActive ? 'font-medium' : 'text-muted-foreground/90')}
+    class={cn('px-4 text-lg font-medium', isActive ? 'font-semibold' : 'text-muted-foreground/90')}
     target={opts.newTab ? '_blank' : '_self'}>
     <p>
-      <span class="text-muted-foreground/50">#</span>
+      <span class="text-muted-code">#</span>
       {opts.text}
     </p>
   </Button>
 {/snippet}
 
-<div class="mx-auto max-w-5xl p-2 text-lg">
+<Toaster />
+
+<div class="mx-auto max-w-5xl p-2 font-mono text-lg">
   <header class="bg-muted px-6 py-4">
     {@render navButton({ text: 'About me', url: '/' })}
     {@render navButton({ text: 'CV', url: 'https://mark.vin/cv.pdf', newTab: true })}
