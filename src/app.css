@@ -143,6 +143,34 @@
 @font-face {
   font-family: 'JetBrains Mono';
   src:
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/otf/JetBrainsMono-Medium.otf')
+      format('opentype'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Medium.woff2')
+      format('woff2'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Medium.ttf')
+      format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/otf/JetBrainsMono-SemiBold.otf')
+      format('opentype'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-SemiBold.woff2')
+      format('woff2'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-SemiBold.ttf')
+      format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
     url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/otf/JetBrainsMono-Bold.otf')
       format('opentype'),
     url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Bold.woff2')

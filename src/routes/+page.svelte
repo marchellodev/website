@@ -32,6 +32,7 @@
           <span class="text-muted-code">[</span>
           {val}
           <span class="text-muted-code">](gen.tech)</span>
+          <ExternalLink class="text-muted-code ml-1.5 size-4 my-auto" />
         </span>
       </Button>
     {:else}
@@ -42,8 +43,8 @@
 
 <p class="mb-2">Hi! My name is Mark.</p>
 
-{@render line({ text: 'I am interested in economics, machine learning, design, and, above all, great software.' })}
-{@render line({ text: 'I enjoy building pretty apps using Svelte and sometimes Flutter.' })}
+{@render line({ text: 'I am interested in economics, machine learning, design, and great software.' })}
+{@render line({ text: 'I enjoy building pretty apps using Svelte and Flutter.' })}
 
 <!-- {@render separator()} -->
 
