@@ -81,7 +81,7 @@
         <span class="text-muted-code">&nbsp;&lt;</span>
         <span class="text-muted-code min-w-0 break-all">{url}</span>
         <span class="text-muted-code">&gt;</span>
-        <span class="whitespace-nowrap flex">
+        <span class="flex whitespace-nowrap">
           <span class="text-muted-code">&nbsp;"</span>
           <span>{text}</span>
           <span class="text-muted-code">"</span>
