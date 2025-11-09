@@ -6,7 +6,7 @@
 </script>
 
 {#snippet heading({ text }: { text: string })}
-  <p class="mt-8 mb-2">
+  <p class="mt-6 mb-2 sm:mt-8">
     <span class="text-muted-code">###</span>
     {text}
   </p>
@@ -27,12 +27,12 @@
   <p>
     <span class="text-muted-foreground">{key}:</span>
     {#if valUrl != null}
-      <Button variant="link" href={valUrl} target="_blank" class="h-fit p-0 text-lg font-normal">
-        <span class="flex">
+      <Button variant="link" href={valUrl} target="_blank" class="h-fit p-0 text-base font-normal sm:text-lg">
+        <span class="flex flex-wrap">
           <span class="text-muted-code">[</span>
           {val}
           <span class="text-muted-code">](gen.tech)</span>
-          <ExternalLink class="text-muted-code ml-1.5 size-4 my-auto" />
+          <ExternalLink class="text-muted-code my-auto ml-1.5 size-3.5 shrink-0 sm:size-4" />
         </span>
       </Button>
     {:else}
@@ -64,31 +64,34 @@
 {@render heading({ text: 'Links' })}
 
 {#snippet ref({ n, url, text, isCopy }: { n: number; url: string; text: string; isCopy?: boolean })}
-  <div>
+  <div class="mb-1">
     <Button
       variant={isCopy ? 'ghost' : 'link'}
       href={isCopy ? undefined : 'https://' + url}
       target={isCopy ? undefined : '_blank'}
       onclick={() => {
+        if (!isCopy) return;
+
         copy(url);
         toast.success('Copied to clipboard!');
       }}
-      class="h-fit p-0! text-lg font-normal">
-      <p class="flex font-mono">
+      class="h-fit w-full justify-start p-0! text-base font-normal sm:text-lg">
+      <div class="flex w-full flex-wrap items-center font-mono">
         <span class="text-muted-code">[{n}]:</span>
         <span class="text-muted-code">&nbsp;&lt;</span>
-        <span class="text-muted-code">{url}</span>
+        <span class="text-muted-code min-w-0 break-all">{url}</span>
         <span class="text-muted-code">&gt;</span>
-
-        <span class="text-muted-code">&nbsp;"</span>
-        <span>{text}</span>
-        <span class="text-muted-code">"</span>
-      </p>
-      {#if isCopy}
-        <Copy class="text-muted-code ml-1.5 size-4" />
-      {:else}
-        <ExternalLink class="text-muted-code ml-1.5 size-4" />
-      {/if}
+        <span class="whitespace-nowrap">
+          <span class="text-muted-code">&nbsp;"</span>
+          {text}
+          <span class="text-muted-code">"</span>
+        </span>
+        {#if isCopy}
+          <Copy class="text-muted-code ml-1.5 size-3.5 shrink-0 sm:size-4" />
+        {:else}
+          <ExternalLink class="text-muted-code ml-1.5 size-3.5 shrink-0 sm:size-4" />
+        {/if}
+      </div>
     </Button>
   </div>
 {/snippet}
