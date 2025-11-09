@@ -1,6 +1,5 @@
 <script lang="ts">
   import '../app.css';
-  import favicon from '$lib/assets/favicon.svg';
   import { Button } from '$lib/shadcn/components/ui/button';
   import { cn } from '$lib/shadcn/utils';
   import { page } from '$app/state';
@@ -17,7 +16,7 @@
 </script>
 
 <svelte:head>
-  <link rel="icon" href={favicon} />
+  <title>Mark's personal page</title>
 </svelte:head>
 
 <ModeWatcher />
@@ -44,14 +43,12 @@
   <header class="bg-muted flex justify-between px-3 py-3 sm:px-6 sm:py-4">
     <div class="flex">
       {@render navButton({ text: 'About me', url: '/' })}
-      {@render navButton({ text: 'CV', url: 'https://mark.vin/cv.pdf', newTab: true })}
+      {@render navButton({ text: 'CV', url: '/cv.pdf', newTab: true })}
     </div>
 
-    <Button onclick={toggleMode} variant="outline" size="icon" class="h-9 w-9 sm:h-10 sm:w-10">
-      <SunIcon
-        class="h-[1rem] w-[1rem] scale-100 rotate-0 transition-all! sm:h-[1.2rem] sm:w-[1.2rem] dark:scale-0 dark:-rotate-90" />
-      <MoonIcon
-        class="absolute h-[1rem] w-[1rem] scale-0 rotate-90 transition-all! sm:h-[1.2rem] sm:w-[1.2rem] dark:scale-100 dark:rotate-0" />
+    <Button onclick={toggleMode} variant="outline" size="icon" class="size-9 sm:size-10">
+      <SunIcon class="size-4  scale-100 rotate-0 transition-all!  dark:scale-0 dark:-rotate-90" />
+      <MoonIcon class="absolute size-4 scale-0 rotate-90 transition-all!  dark:scale-100 dark:rotate-0" />
       <span class="sr-only">Toggle theme</span>
     </Button>
   </header>

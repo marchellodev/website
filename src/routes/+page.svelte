@@ -81,9 +81,9 @@
         <span class="text-muted-code">&nbsp;&lt;</span>
         <span class="text-muted-code min-w-0 break-all">{url}</span>
         <span class="text-muted-code">&gt;</span>
-        <span class="whitespace-nowrap">
+        <span class="whitespace-nowrap flex">
           <span class="text-muted-code">&nbsp;"</span>
-          {text}
+          <span>{text}</span>
           <span class="text-muted-code">"</span>
         </span>
         {#if isCopy}
@@ -103,4 +103,3 @@
 
 <!-- todo: -->
 <!-- - Add a cat -->
-<!-- - Dark theme -->
