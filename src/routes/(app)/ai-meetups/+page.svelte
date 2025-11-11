@@ -210,27 +210,3 @@
 <Card class="p-4">
   <p>btw, we are always looking for great full-stack and AI engineers -- if that sounds interesting, drop me a line!</p>
 </Card>
-
-<style>
-  .hiring-card {
-    background: var(--muted-background);
-    color: var(--muted-foreground);
-    padding: 16px;
-    border-radius: 8px;
-    margin-top: 30px;
-    border: 1px solid hsl(var(--muted-foreground) / 0.2);
-    opacity: 0.9;
-  }
-
-  .hiring-card p {
-    margin: 8px 0;
-  }
-
-  .hiring-card p:first-child {
-    margin-top: 0;
-  }
-
-  .hiring-card p:last-child {
-    margin-bottom: 0;
-  }
-</style>
