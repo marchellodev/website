@@ -21,9 +21,10 @@ export const experienceWork: Experience[] = [
       `Written various CLI automation scripts and web services for migration from Google Sites to Notion (on super.so front-end) for the Internal Education Platform used by 4k+ employee} Built & managed widely used internal CRM`,
       `Built &amp; managed widely used internal CRM tools (using Appsmith) and numerous automation workflows (via n8n) on a Hetzner infrastructure`
 
-      // TODO mention:
+      // TODO: mention
       // - aws, nomad setup
-      //
+
+      // TODO: recover the openai redteaming report
     ]
   },
   {
